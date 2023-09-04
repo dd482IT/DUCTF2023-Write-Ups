@@ -38,7 +38,7 @@ The main vulnerability I noticed is that the code does not use the session.valid
 ```
 SECRET_KEY = secrets.token_hex(32)
 ```
-2. The token creation did not have any validation on the data. This was the key.
+2. The token creation did not have any validation on the data coming from the request. This was the vulnerability.
 
 The POST request for registration was passing these variables.
 ```
@@ -55,7 +55,7 @@ In combination with this website tool, https://jwt.io/.
 I wable to see what data the token stored. They were indentical to the variables in the POST request. 
 I was able to set the variable for is_teacher=True in the request. 
 ```
-stu_num=testing&stu_email=testing%40te&password=testing
+stu_num=testing&stu_email=testing%40te&password=testing&is_teacher=True
 ```
 
 FLAG: DUCTF{Y0u_Kn0W_M4Ss_A5s1GnM3Nt_c890ne89c3}
