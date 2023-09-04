@@ -54,32 +54,17 @@ def create_token(data):
 In combination with this website tool, https://jwt.io/.
 I wable to see what data the token stored. They were indentical to the variables in the POST request. 
 I was able to set the variable for is_teacher=True in the request. 
-```
-stu_num=testing&stu_email=testing%40te&password=testing&is_teacher=True
-```
 
-FLAG: DUCTF{Y0u_Kn0W_M4Ss_A5s1GnM3Nt_c890ne89c3}
-
-
-### Step 1: [Task Name]
-
-[Explain the first step you took to solve the challenge, including any tools or techniques you used.]
-
-### Step 2: [Task Name]
-
-[Continue describing the steps you followed to solve the challenge. Be sure to include any interesting findings or observations.]
-
-### Step N: [Task Name]
-
-[Repeat the above pattern for each significant step or task you completed during the challenge.]
 
 ## Solution
 
-[Provide the solution to the challenge. This could include code snippets, commands, or explanations of the final steps you took to solve the challenge.]
-
+Add the "is_teacher=True" to the variables in the POST request. 
+```
+stu_num=testing&stu_email=testing%40te&password=testing&is_teacher=True
+```
 ## Flag
 
-[Present the flag you obtained as proof of solving the challenge.]
+FLAG: DUCTF{Y0u_Kn0W_M4Ss_A5s1GnM3Nt_c890ne89c3}
 
 ## Conclusion
 
@@ -91,8 +76,6 @@ FLAG: DUCTF{Y0u_Kn0W_M4Ss_A5s1GnM3Nt_c890ne89c3}
 
 ## Acknowledgments
 
-[Mention anyone you want to thank or credit for their assistance or resources during the CTF.]
+Tom B & Alfred S 
 
 ---
-
-**Note**: Customize this template b
